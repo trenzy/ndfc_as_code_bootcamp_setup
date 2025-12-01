@@ -12,12 +12,12 @@ We also recommend installing Visual Studio Code from Microsoft for an Integrated
 
 Visual Studio Code also has the capabilities to add functionality through the use of Extensions. For the lab (and further use with NDFC as Code), we recommend installing the following extensions:
 
-[Ansible VSCode Extension](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
+- [Ansible VSCode Extension](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
 [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 If you are running the the Windows Subsystem for Linux (WSL), then you may want to install this extension in your windows environment (where Linux is installed):
 
-[WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
 ### Step 1 - Installing the example repository
 
