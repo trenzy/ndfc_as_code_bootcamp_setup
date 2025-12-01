@@ -1,12 +1,6 @@
-# NDFC (VXLAN) as Code Lab for Digitized Delivery
+# Environment set up for NDFC (VXLAN) as Code Lab 
 
-This lab is a companion to the NDFC-as-Code Digitized Delivery bootcamp. The tasks in this lab covers the architecture and features that use NDFC-as-Code for VXLAN EVPNS.
-
-This lab will cover the following topics:
-
-- 1 Setting up your local environment.
-- 2 Cloning the working repository. This is what will be used to build the "scaffolding" for our configurations.
-- 3 Modifying the configurations for the lab to create a new Fabric in NDFC as well as devices, VRFs, and Networks.
+This lab is a companion to the NDFC-as-Code Digitized Delivery bootcamp. The tasks cover what tools are needed and how to install them in your environment. If you already have these tools installed, you can skip this and go directly to the lab guide itself.
 
 ## Setting up environment for the collection
 
