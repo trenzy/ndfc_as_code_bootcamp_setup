@@ -107,6 +107,8 @@ One thing to note, though we specified certain packages for pip to install, thos
 
 ### Step 4 - Install Ansible Galaxy Collection 
 
+_Please note_ that this step will fail if you are on our Corporate VPN - make sure you are disconnected before continuing. 
+
 Ansible collections are the standard distribution format for sharing Ansible content. It allows the capability to install the required modules and plugins for Ansible (and our playbooks) to use them.
 
 The default placement for Ansible Galaxy Collections is in your home directory under `~.ansible/collections/ansible_collections/`. For this lab, we are going to install them in the same directory that we are going to work in (the cloned on locally on your system). To install Galaxy Collection inside the repository you are creating with this example repository, you can run the following command:
