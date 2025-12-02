@@ -194,4 +194,4 @@ We are now ready to do the rest of the tasks in the lab. You can find the lab gu
 
 You can start from the section on "Working with the NaC Data Model" and go through to the section on "NaC Testing". 
 
-Feel free to go through the rest of the scenarios throughout the site, including the Data Models for other technologies. We hope to enjoy the lab.
+Feel free to go through the rest of the scenarios throughout the site, including the Data Models for other technologies. We hope you enjoy the lab.
