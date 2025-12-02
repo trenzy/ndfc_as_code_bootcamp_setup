@@ -164,11 +164,11 @@ Your output should be somewhat similar to the output below, though there will be
   libyaml = True
 ```
 
-### Step 7 - NDFC environment variables.
+### Step 7 - NDFC environment variables
 
 We now want to set up environment variables that our Ansible playbooks can reference in their playbooks. This will contain things like the IP address of the NDFC, username/password, and other information.
 
-To create this in VSCode, you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can add the following:
+To create this in VSCode, while in your root directory you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can add the following to it:
 
 ```bash
 export ND_HOST="198.18.133.100"
@@ -179,7 +179,7 @@ export NDFC_SW_USERNAME="admin"
 export NDFC_SW_PASSWORD="C1sco12345"
 ```
 
-We can now save this file. Within VSCode, click on `File` -> `Save As` and then save it as `.env`. Once saved, you can source these environment variables with the following command:
+We can now save this file. Within VSCode, click on `File` -> `Save As` and then save it as `.env`. Once saved, you can source these environment variables with the following command in your terminal:
 
 ```bash
 source .env
@@ -192,14 +192,30 @@ set | grep ND_HOST
 
 This should provide you with the IP address you defined in the `.env` file.
 
-We are now ready to do the rest of the tasks in the lab. You can find the lab guide on the [netascode site](https://netascode.cisco.com/docs/guides/vxlan/nd/learning_lab/building-data-model/).
+### Step 8 - Final local repo additions
 
-You can start from the section on "Working with the NaC Data Model" and go through to the section on "NaC Testing". 
+## serials.py
 
-Note that under "NaC Testing" you will be using `nac-test` for a deployment check. In order to use this tool, please install it with the following command:
+There is a python file in this repo titled `serials.py`. This is the python script that is referenced under __Working with NaC Data Model__ -> __Serial Numbers of the Switches__ -> __Step 1: Retrieve serial numbers from virtual topology__ in the learning lab.  
+
+You are going to add this .py file to your root directory in order to run it.  
+
+To create this in VSCode, while in your root directory you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can copy and paste the content from `serials.py` from this repo above into it.
+
+We can now save this file. Within VSCode, click on `File` -> `Save As` and then save it as `serials.py`. Once saved, the script can be succesfully executed when you get to the appropriate step.
+
+## nac-test
+
+Note that under "NaC Testing" you will be using `nac-test` for a deployment check. In order to use this tool, please install it with the following command while in your virtual environment:
 
 ```bash
 pip install nac-test
 ```
+
+***
+
+We are now ready to do the rest of the tasks in the lab. You can find the lab guide on the [netascode site](https://netascode.cisco.com/docs/guides/vxlan/nd/learning_lab/building-data-model/).
+
+You can start from the section on "Working with the NaC Data Model" and go through to the section on "NaC Testing". 
 
 Feel free to go through the rest of the scenarios throughout the site, including the Data Models for other technologies. We hope you enjoy the lab.
