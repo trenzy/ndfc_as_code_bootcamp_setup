@@ -190,8 +190,14 @@ set | grep ND_HOST
 
 This should provide you with the IP address you defined in the `.env` file.
 
-We are now ready to do the rest of the tasks in the lab. You can find the lab guide on the [netascode](https://netascode.cisco.com/docs/guides/vxlan/nd/learning_lab/building-data-model/).
+We are now ready to do the rest of the tasks in the lab. You can find the lab guide on the [netascode site](https://netascode.cisco.com/docs/guides/vxlan/nd/learning_lab/building-data-model/).
 
 You can start from the section on "Working with the NaC Data Model" and go through to the section on "NaC Testing". 
+
+Note that under "NaC Testing" you will be using `nac-test` for a deployment check. In order to use this tool, please install it with the following command:
+
+```bash
+pip install nac-test
+```
 
 Feel free to go through the rest of the scenarios throughout the site, including the Data Models for other technologies. We hope you enjoy the lab.
