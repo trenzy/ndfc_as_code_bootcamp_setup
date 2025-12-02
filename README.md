@@ -117,16 +117,20 @@ The default placement for Ansible Galaxy Collections is in your home directory u
 ansible-galaxy collection install -p collections/ -r requirements.yaml
 ```
 
-Since this is not the default behavior of where Ansible installs collections, you will need to configure your Ansible configuration (`ansible.cfg`) file to point to the correct collection location. 
+Since this is not the default behavior of where Ansible installs collections, you will need to configure your Ansible configuration (`ansible.cfg`) file to point to the correct collection location by adjusting the `collections_path` to your environment paths.
 
-This sets the correct path for all the Python modules and libraries in the virtual environment that was created. If you look in that directory you will find the collections package locations. Below is the base `ansible.cfg` file. You will need to adjust the `collections_path` to your environment paths:
+To create this `ansible.cfg` in VSCode, you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can add the following:
 
 ```bash
 [defaults]
-collections_path = ./collections/
+collections_path = ./collections/ansible_collections/
 ```
+We can now save this file. Within VSCode, click on `File` -> `Save As` and then save it as `ansible.cfg`.
 
-In the cloned repository, this modification has already been made.
+This sets the correct path for all the Python modules and libraries in the virtual environment that was created.
+
+If you look in that directory you will find the collections package locations.
+
 
 ### Step 5 - Change Ansible callbacks
 
@@ -137,8 +141,6 @@ callback_whitelist=ansible.posix.timer,ansible.posix.profile_tasks,ansible.posix
 callbacks_enabled=ansible.posix.timer,ansible.posix.profile_tasks,ansible.posix.profile_roles
 bin_ansible_callbacks = True
 ```
-
-If you look at the `ansible.cfg` file in the cloned repository, you will see that these updates have already been made. 
 
 ### Step 6 - Verify the Ansible installation
 
@@ -166,7 +168,7 @@ Your output should be somewhat similar to the output below, though there will be
 
 We now want to set up environment variables that our Ansible playbooks can reference in their playbooks. This will contain things like the IP address of the NDFC, username/password, and other information.
 
-To created this in VSCode, you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can add the following:
+To create this in VSCode, you can go to `File` -> `New Text File`. This will open a new window within the VSCode environment. Once there, you can add the following:
 
 ```bash
 export ND_HOST="198.18.133.100"
